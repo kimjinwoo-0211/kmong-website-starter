@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brand Starter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css?v=2" />
+</head>
+<body class="antialiased">
+  <header class="bg-white/80 backdrop-blur sticky top-0 z-50 border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-bold text-xl">Brand</a>
+      <nav class="space-x-4 text-sm">
+        <a href="#services" class="hover:underline">서비스</a>
+        <a href="#portfolio" class="hover:underline">포트폴리오</a>
+        <a href="#about" class="hover:underline">회사소개</a>
+        <a href="#contact" class="hover:underline">문의</a>
+        <a href="/admin/" class="ml-4 px-3 py-1.5 rounded bg-black text-white">관리자</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-4 py-24" id="hero">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">고객의 문제를 해결하는<br/> 심플한 웹사이트</h1>
+    <p class="mt-4 text-gray-600 max-w-2xl">콘텐츠는 관리자에서 바로 수정/배포할 수 있어요.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="#contact" class="px-5 py-3 rounded-xl bg-black text-white">상담하기</a>
+      <a href="#portfolio" class="px-5 py-3 rounded-xl border">작업물 보기</a>
+    </div>
+  </section>
+
+  <section class="bg-gray-50" id="services">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold mb-6">서비스</h2>
+      <div id="services-list" class="grid md:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold mb-6">포트폴리오</h2>
+    <div id="portfolio-list" class="grid md:grid-cols-3 gap-6"></div>
+  </section>
+
+  <section id="about" class="bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold mb-6">회사소개</h2>
+      <div id="about-content" class="prose"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold mb-6">문의하기</h2>
+    <form id="contact-form" class="grid gap-3 max-w-xl">
+      <input class="border rounded px-3 py-2" placeholder="이름" required />
+      <input type="email" class="border rounded px-3 py-2" placeholder="이메일" required />
+      <textarea class="border rounded px-3 py-2" rows="4" placeholder="문의 내용" required></textarea>
+      <button class="px-4 py-2 rounded bg-black text-white w-fit">보내기</button>
+      <p class="text-sm text-gray-500">※ 데모: 실제 전송 대신 콘솔에 출력됩니다.</p>
+    </form>
+  </section>
+
+  <footer class="border-t">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-500">© <span id="year"></span> Brand. All rights reserved.</div>
+  </footer>
+
+  <script src="./app.js?v=2"></script>
+</body>
+</html>
