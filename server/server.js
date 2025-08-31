@@ -33,7 +33,7 @@ app.use('/', express.static(path.join(__dirname, '..', 'client'), { maxAge: 0 })
 app.use('/api/auth', authRoutes);
 app.use('/api/content', contentRoutes);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 400-0;
 connectDB(process.env.MONGO_URI)
   .then(() => app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`)))
   .catch((err) => {
